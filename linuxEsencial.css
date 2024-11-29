@@ -1,31 +1,13 @@
 body {
   background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .contenedor_1 {
   background-image: url(./imagenes/imagen_fondo.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.imagen_carrusel {
-  animation-name: transicionimagencarrusel;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  filter: blur(1px);
-}
-@keyframes transicionimagencarrusel {
-  from {
-      filter: blur(1px);
-      transform: scale(0.8, 0.8);
-  }
-
-  to {
-      filter: blur(0px);
-      transform: scale(1.0, 1.0);
-  }
 }
 h1 {
   text-align: center;
@@ -38,11 +20,17 @@ h2 {
   color: #37FF8B;
   font-family: 'Courier New', Courier, monospace;
 }
+.imagen_carrusel {
+  box-shadow: black 5px 5px 5px;
+}
 .card-title {
   text-align: center;
   text-shadow: rgba(255,255,255,0.6) 1px 1px 1px;
   color: #37FF8B;
   font-family: 'Courier New', Courier, monospace;
+}
+.card {
+  box-shadow: black 5px 5px 5px;
 }
 .lista {
   color: white;
@@ -50,8 +38,13 @@ h2 {
 }
 p {
   color: white;
-  text-align: justify;
   font-family: 'Courier New', Courier, monospace;
+}
+.texto_informativo {
+  text-align: justify;
+}
+.imagen_distribuciones {
+  box-shadow: black 5px 5px 5px;
 }
 .footer {
   color: white;
